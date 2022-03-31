@@ -1,7 +1,14 @@
 {% extends 'cities/base.html' %}
 
+
 {% block content %}
+<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+    <option selected>Select city</option>
+  <option value="1">
  {% for con in list_name %}
- <p>{{con.name}} </p>
+  <p><h2>{{con.name}}</h2> </p>
+   <h3>{{ con.description }}</h3>
  {% endfor %}
+</option>
+</select>
 {% endblock %}
