@@ -2,7 +2,7 @@
 
 
 {% block content %}
-<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+<div class="col-md-4"><select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
     <option selected>Select city</option>
   <option value="1">
  {% for con in list_name %}
@@ -11,4 +11,5 @@
  {% endfor %}
 </option>
 </select>
+</div>
 {% endblock %}
